@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Poppins');
+
+.container {
+    text-align: center;
+    padding-top: 10%;
+}
+
+#title {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    /*font-weight: bold;*/
+    text-shadow: 2px 2px #ff0083;
+    text-decoration: underline;
+}
+
+body {
+    background-color: #00ffcb;
+}
+li {
+  list-style: none;
+  color: white;
+   font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px #ff0083;
+}
+
+
+
+.play {
+    text-shadow: 2px 2px #ff0083;
+    background-color: white;
+    width: 30%;
+    height: 50px;
+    border: 3px solid black;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ff0083;
+}
+
+
+/*//////////////////////////GAME PAGE/////////////////////////////////*/
+.main-container {
+  width: 600px;
+  height: 500px;
+  background-color: rgb(50, 198, 148);
+  border-radius: 30px;
+  position: relative;
+  top:90px;
+  left: 30%;
+  text-align: center;
+  box-shadow: 2px 6px 6px 6px black;
+
+
+}
+.description {
+font-size:40px;
+padding: 9%;
+    font-family: 'Nunito', sans-serif;
+
+
+
+}
+.dotted {
+
+    border: 2px dotted black;
+}
+
+.buttons {
+   margin-top: 30px;
+
+}
+
+.answer {
+  font-size: 20px;
+  height: 50px;
+    width: 250px;
+    border-radius: 50px;
+    margin:10px 40px 20px 0px;
+    padding: 10px 10px;
+
+}
+#choice1,#choice2,#choice3,#choice4{
+       background-color:#00ffcb;
+       cursor: pointer;
+
+
+}
+#choice1:hover, #choice2:hover, #choice3:hover, #choice4:hover {
+  background-color: #ff0083;
+}
+#progress {
+  font-size:25px;
+  font-weight: bold;
+      font-family: 'Nunito', sans-serif;
+
+}
+
+
+
+
+
