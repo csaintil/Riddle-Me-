@@ -4,7 +4,6 @@
 <head>
     <!-- <script src='script/jquery.min.js'></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
     <script src="script.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,22 +12,40 @@
 </head>
 
 <body>
-  <div class="main-container">
-    <h1 class="description">Test Yourself!!!</h1>
-    <div class="dotted"></div>
-    <p id="questions"></p>
-    <div class="buttons">
-        <button class="answer" id="choice1"></button>
-        <button class="answer" id="choice2"></button>
-        <button class="answer" id="choice3"></button>
-        <button class="answer" id="choice4"></button>
-    </div>
+    <div class="main-container">
+        <h1 class="description">Test Yourself!!!</h1>
         <div class="dotted"></div>
+        <div class="showScore"></div>
+        <p id="question"></p>
+        <div class="buttons">
+            <button class="answer" id="choice1"></button>
+            <button class="answer" id="choice2"></button>
+            <button class="answer" id="choice3"></button>
+            <button class="answer" id="choice4"></button>
+        </div>
+        <footer>
+            <!-- <button onclick="changeQuestion(this.id)" id="previous">previous Question</button> -->
+            <button onclick="previous()" class="previous">previous Question</button>
+            <button onclick="next()" class="next">Next Question</button>
+            <a href="">
+                <a href="#openModal"><button class="submit">Submit</button></a>
+            </a>
+            <!-- <button onclick="changeQuestion(this.id)" id="next">Next Question</button> -->
+        </footer>
+    </div>
+    <div>
 
-    <footer>
-      <p id="progress">Question X of Y</p>
-    </footer>
-  </div>
+
+
+<div id="openModal" class="modalDialog">
+    <div>
+       <h1 >Your Score is:<h1 class="result"></h1></h1>
+       <a href="index.html"><button>Go BAck Startter Pack</button></a>
+    </div>
+    
+</div>
+</div>
+
 </body>
 
 </html>
