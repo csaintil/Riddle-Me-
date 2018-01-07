@@ -59,6 +59,9 @@ $(function() {
                 $(putAnswer[i]).text(q.choices[i]);
             }
         }
+        // $(putAnswer[i]).on('click',function(heoo){
+        //     alert('hello')
+        // })
     }
     // function showAnswer(){
     //     var putAnswer = $('.answer');
