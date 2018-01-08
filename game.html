@@ -9,9 +9,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body class="quiz_background">
     <div class="main-container">
         <h1 class="description">Test Yourself!!!</h1>
         <div class="dotted"></div>
@@ -25,22 +26,27 @@
         </div>
         <footer>
             <!-- <button onclick="changeQuestion(this.id)" id="previous">previous Question</button> -->
-            <button onclick="previous()" class="previous">previous Question</button>
-            <button onclick="next()" class="next">Next Question</button>
-            <a href="">
-                <a href="#openModal"><button class="submit">Submit</button></a>
-            </a>
+            <button onclick="previous()" class="previous"><i class="fa fa-hand-o-left" aria-hidden="true"></i></button>
+            
+                        <button onclick="next()" class="next"><i class="fa fa-hand-o-right" aria-hidden="true"></i></button>
+
             <!-- <button onclick="changeQuestion(this.id)" id="next">Next Question</button> -->
         </footer>
+        <a href="">
+                <a href="#openModal"><button class="submit"><i class="fa fa-hand-peace-o" aria-hidden="true"></i></button></a>
+            </a>
     </div>
     <div>
 
 
 
 <div id="openModal" class="modalDialog">
+
     <div>
+          
        <h1 >Your Score is:<h1 class="result"></h1></h1>
-       <a href="index.html"><button>Go BAck Startter Pack</button></a>
+       <div class="image"></div>
+       <a href="index.html"><button class="back">Go Back to Main Page</button></a>
     </div>
     
 </div>

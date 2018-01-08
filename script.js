@@ -8,7 +8,7 @@ var Question = function(quizQuestion, choices, answer) {
     this.answer = answer;
 }
 var the_questions = [
-    new Question('Who is the best all-around player in the NBA ?', ['Kobe Bryant', 'Michael Jordan', 'Steve Kerr', "Lebron James, Obvioustly"], 'Lebron James, Obvioustly'),
+    new Question(' I travel all over the world, but always stay in my corner. What am I?', ['Stamp', 'Lamp', 'Lamb', 'StarWars'], 'Stamp'),
     new Question('There was a plane crash every single person died. Who survived?', ['the plane', 'No One, Genius', 'Married Couple,duh', 'The pilot '], 'Married Couple,duh'),
     new Question('Which language is used to style on them?', ['Java', 'Javascript', 'Css', 'That Money, duh'], 'Css'),
     new Question('Winter Is coming?', ['Games of Thrones', 'John Wick', 'Hercules', 'None of them'], 'Games of Thrones'),
@@ -16,20 +16,22 @@ var the_questions = [
 
 ];
 
-var scores = [the_questions.length];
+var scores = [];
+
 
 $(document).ready(function() {
     showQuestion();
     showAnswers();
     // $('.next').on('click',next());
     $('.answer').on('click', function() {
-        if ($(this).text() == the_questions[questionIndex].answer) {
+        if ($(this).text() == the_questions[questionIndex].answer)
+        {
             scores[questionIndex] = true;
         } else {
             scores[questionIndex] = false;
         } 
  
-
+// console.log($(this))
     });
     $('.submit').on('click',function(){
         computeScore();
@@ -84,7 +86,19 @@ for(var i = 0; i < scores.length; i++){
     if (scores[i] ==true) {
         score++;
     } 
+
 }
+if(score <= 1){
+    $('.image').addClass('image1')
+    alert('hello');
+} 
+// else if (score === 2){
+//     alert('My man');
+// } else if (score ===3){
+//     alert('my nigga')
+// }
+
+
 $('.result').text(score);
 
 }

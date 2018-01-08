@@ -1,177 +1,225 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito|Poppins');
 
 .container {
+  margin:auto;
     text-align: center;
     padding-top: 10%;
+    margin-right: 350px;
 }
 
 #title {
     text-align: center;
     font-family: 'Nunito', sans-serif;
     /*font-weight: bold;*/
-    color: white;
-    font-size: 40px;  
+    color: #0a0404b3;
+    font-size: 45px;
+        font-family: 'Nunito', sans-serif;
+
 }
-.rules{
-  font-size: 25px;
-  color: gray;
-  font-family: 'Nunito', sans-serif;
+#rules {
+  color: #21c322e0;
+  font-size: 40px;
 }
 
-body {
-    background-color:#607d8bfa;
+.rule {
+    font-size: 35px;
+    color: #413b3ba3;
+    font-family: 'Nunito', sans-serif;
 }
+/*@media (max-width:800px) {
+  .riddler{
+    width:100%; The width is 100%, when the viewport is 800px or smaller
+  }
+}*/
+
+
+.riddler {
+  background-image: url(riddler2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-
+}
+
 li {
-  list-style: none;
-  color: black;
-   font-size: 20px;
+
+    list-style: none;
+    font-size: 25px;
     font-family: 'Poppins', sans-serif;
-   
 }
 
 
 
 .play {
-  
-    background-color: white;
-    width: 30%;
+
+    background-color:#115a14;
+    width: 20%;
     height: 50px;
     border: 3px solid black;
     font-size: 30px;
     cursor: pointer;
+        font-family: 'Nunito', sans-serif;
+        margin-top: 20px;
+
 }
 
 .play:hover {
-    background-color: #607d8bfa;
+    background-color: #8123aed4;
 }
+
 
 
 /*//////////////////////////GAME PAGE/////////////////////////////////*/
+
 .main-container {
-  width: 600px;
-  height: 500px;
-  background-color: rgb(50, 198, 148);
-  border-radius: 30px;
-  position: relative;
-  top:90px;
-  left: 30%;
-  text-align: center;
-  box-shadow: 2px 6px 6px 6px black;
-
-
+    width: 600px;
+    height: 500px;
+    background-color:#e2e2e285;
+    border-radius: 30px;
+    position: relative;
+    top: 90px;
+    left: 30%;
+    text-align: center;
+    box-shadow: 2px 6px 6px 6px black;
 }
+
 .description {
-font-size:40px;
-padding: 9%;
+    font-size: 40px;
+    padding: 9%;
     font-family: 'Nunito', sans-serif;
-
-
-
 }
+
 .dotted {
 
     border: 2px dotted black;
 }
 
 .buttons {
-   margin-top: 30px;
-
+    margin-top: 30px;
 }
 
 .answer {
-  font-size: 20px;
-  height: 50px;
+    font-size: 20px;
+    height: 50px;
     width: 250px;
     border-radius: 50px;
-    margin:10px 40px 20px 0px;
+    margin: 10px 40px 20px 0px;
     padding: 10px 10px;
-
 }
-#choice1,#choice2,#choice3,#choice4{
-       background-color:#00ffcb;
-       cursor: pointer;
 
+#choice1,
+#choice2,
+#choice3,
+#choice4 {
+    background-color: #115a14;
+    cursor: pointer;
+}
 
+#choice1:hover,
+#choice2:hover,
+#choice3:hover,
+#choice4:hover {
+    background-color: #8123aed4;
 }
-#choice1:hover, #choice2:hover, #choice3:hover, #choice4:hover {
-  background-color: #ff0083;
-}
+
 #score {
-  font-size:25px;
-  font-weight: bold;
-      font-family: 'Nunito', sans-serif;
-
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
 }
 
 .next {
-  background-color: yellow;
+  background-color: #8c8989;
+    width: px;
+    /* margin-right: 340px; */
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
 }
+
+.next:hover {
+  background-color: #0000008c;
+}
+
 .previous {
-  background-color: yellow;
+  background-color: #8c8989;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+         margin-right: 340px; 
+
 }
+.previous:hover {
+  background-color: #0000008c;
+}
+
+.back {
+
+   background-color: #8c8989;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.back:hover {
+  background-color: #0000008c;
+}
+.submit {
+   background-color: #8c8989;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+}
+.submit:hover {
+  background-color: #0000008c;
+}
+
 .result {
-  color: red;
+    color: red;
+    text-align: center;
 }
 
 .modalDialog {
 
-  position: fixed;
-  font-family: Arial;
-/*padding: 0;*/
+    position: fixed;
+    font-family: Arial;
 
-     top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-    background: rgba(0,0,0,0.8);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
     z-index: 999999;
     opacity: 0;
-    -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-  pointer-events: none;
-    
+
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
 }
 
 .modalDialog:target {
-  opacity:1;
-  pointer-events: auto;
-}
-.modalDialog > div {
-  width: 400px;
-  position: relative;
-  margin: 10% auto;
-  padding: 5px 20px 13px 20px;
-  border-radius: 10px;
-  background: #fff;
-  background: -moz-linear-gradient(#fff, #999);
-  background: -webkit-linear-gradient(#fff, #999);
-  background: -o-linear-gradient(#fff, #999);
-}
-.close {
-  background: #606061;
-  color: #FFFFFF;
-  line-height: 25px;
-  position: absolute;
-  right:-12px;
-  top: -10px;
-  width: 24px;
-
-  text-align: center;
-  font-weight: bold;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  border-radius: 12px;
-
--moz-box-shadow: 1px 1px 3px #000;
-  -webkit-box-shadow: 1px 1px 3px #000;
-  box-shadow: 1px 1px 3px #000;
-}
-.close:hover {
-  background-color: red;
+    opacity: 1;
+    pointer-events: auto;
 }
 
-
-
-
-
+.modalDialog>div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+/*//////////////////////////////////////////////////*/\
+.image1 {
+  /*background-image: url(memory.gif);*/
+  background-color: yellow;
+}
+.quiz_background{
+  background-image: url(riddle_background.jpg);
+  background-size: cover;
+}
