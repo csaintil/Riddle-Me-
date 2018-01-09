@@ -12,7 +12,7 @@ var the_questions = [
     new Question('I have billions of eyes, yet I live in darkness. I have millions of ears, yet only four lobes. I have no muscle, yet I rule two hemispheres. What am I?', ['Human Brain', 'Human Ear', 'Human Abdomen', 'Air'], 'Human Brain'),
     new Question('Winter Is coming?', ['Games of Thrones', 'John Wick', 'Hercules', 'None of them'], 'Games of Thrones'),
     new Question('The more you take, the more you leave behind. What am I?', ['Life', 'Shadow', 'Babies', 'footstep, Obvioustly'], 'footstep, Obviously'),
-    new Question('When is the time of a clock like the whistle of a train? ', [' One:thirty', 'Four O\'\clock', 'Three O \'\clock', 'When its two to two.'], 'When its two to two.'),
+    new Question('The more you take away from it the larger it grows, what is it?', ['A Hole','A Tree','Baloon Filled with Water','None of them'], 'A Hole'),
 
 
 ];

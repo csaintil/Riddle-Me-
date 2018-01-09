@@ -1,7 +1,9 @@
 #### README 
 The game is about riddle. I ask different ridlle question and you do your best to answer them. Each time you get answer right you gain one point. At the end of the trivia game. You click the peace sign to get your score.
 
-The features, I included in this project are, a next and previous button that become disabled themselves when you reach the end of the questions and a modal that display your score, you can win and lose.
+link to my game https://csaintil.github.io/Riddle-Me-/
+
+The features, I included in this project are, a next and previous button that become disabled that themselves when you reach the end of the questions and a modal that display your score, you can win and lose, different sound whether you lose or win.
 
 As for pain point,first one was to put each answer in the button, second was to check the user click the right answer and to match wiht the right answer.
 
