@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito|Poppins');
-
+@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display');
+@import url('https://fonts.googleapis.com/css?family=Courgette|Sedgwick+Ave+Display');
 .container {
   margin:auto;
     text-align: center;
-    padding-top: 10%;
-    margin-right: 350px;
+    padding-top: 7%;
+    /*margin-right: 350px;*/
+    margin-left: 436px;
 }
 
 #title {
     text-align: center;
     font-family: 'Nunito', sans-serif;
-    /*font-weight: bold;*/
-    color: #0a0404b3;
+    /*color: #0a0404b3;*/
     font-size: 45px;
-        font-family: 'Nunito', sans-serif;
+    color: #93a293;
 
 }
 #rules {
@@ -23,7 +24,8 @@
 
 .rule {
     font-size: 35px;
-    color: #413b3ba3;
+    /*color: #413b3ba3;*/
+    color: #737f74a3;
     font-family: 'Nunito', sans-serif;
 }
 /*@media (max-width:800px) {
@@ -34,7 +36,7 @@
 
 
 .riddler {
-  background-image: url(riddler2.jpg);
+  background-image: url(quiz.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-
@@ -44,7 +46,6 @@ li {
 
     list-style: none;
     font-size: 25px;
-    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -69,22 +70,27 @@ li {
 
 
 /*//////////////////////////GAME PAGE/////////////////////////////////*/
+#question {
+  font-size: 20px;
+font-family: 'Sedgwick Ave Display', cursive;
+font-family: 'Courgette', cursive;
+}
 
 .main-container {
-    width: 600px;
-    height: 500px;
+    width: 650px;
+    height: 520px;
     background-color:#e2e2e285;
     border-radius: 30px;
     position: relative;
     top: 90px;
     left: 30%;
     text-align: center;
-    box-shadow: 2px 6px 6px 6px black;
+    box-shadow: 2px 6px 6px 6px #05e62529;
 }
 
 .description {
     font-size: 40px;
-    padding: 9%;
+    padding: 5%;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -104,6 +110,8 @@ li {
     border-radius: 50px;
     margin: 10px 40px 20px 0px;
     padding: 10px 10px;
+        font-family: 'Nunito', sans-serif;
+
 }
 
 #choice1,
@@ -128,7 +136,7 @@ li {
 }
 
 .next {
-  background-color: #8c8989;
+  background-color:#8123aed4;
     width: px;
     /* margin-right: 340px; */
     border-radius: 5px;
@@ -138,11 +146,11 @@ li {
 }
 
 .next:hover {
-  background-color: #0000008c;
+  background-color:#115a14;
 }
 
 .previous {
-  background-color: #8c8989;
+  background-color: #8123aed4;
     border-radius: 5px;
     font-size: 25px;
     cursor: pointer;
@@ -151,19 +159,19 @@ li {
 
 }
 .previous:hover {
-  background-color: #0000008c;
+  background-color: #115a14;
 }
 
 .back {
 
-   background-color: #8c8989;
+   background-color: #115a14;
     border-radius: 5px;
     font-size: 25px;
     cursor: pointer;
 }
 
 .back:hover {
-  background-color: #0000008c;
+  background-color: #8123aed4;
 }
 .submit {
    background-color: #8c8989;
@@ -179,6 +187,7 @@ li {
 .result {
     color: red;
     text-align: center;
+    height: 200px;
 }
 
 .modalDialog {
@@ -205,6 +214,7 @@ li {
 
 .modalDialog>div {
     width: 400px;
+    height: 339px;
     position: relative;
     margin: 10% auto;
     padding: 5px 20px 13px 20px;
@@ -214,12 +224,23 @@ li {
     background: -webkit-linear-gradient(#fff, #999);
     background: -o-linear-gradient(#fff, #999);
 }
-/*//////////////////////////////////////////////////*/\
-.image1 {
-  /*background-image: url(memory.gif);*/
-  background-color: yellow;
+.image {
+  background-image: url(memory.gif);
+  background-size: cover;
 }
+.image2{
+    background-image: url(shocked.gif);
+  background-size: cover;
+
+}
+.image3{
+    background-image: url(myman.gif);
+  background-size: cover;
+
+}
+/*//////////////////////////////////////////////////*/
+
 .quiz_background{
-  background-image: url(riddle_background.jpg);
+  background-image: url(rid.jpg);
   background-size: cover;
 }

@@ -13,6 +13,16 @@
 </head>
 
 <body class="quiz_background">
+    <audio id="winning_audio">
+          <source src="riddler.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="losing_audio">
+          <source src="losing.mp3" type="audio/mpeg">
+    </audio>
+     <audio id="losing2_audio">
+          <source src="losing2.mp3" type="audio/mpeg">
+    </audio>
+
     <div class="main-container">
         <h1 class="description">Test Yourself!!!</h1>
         <div class="dotted"></div>
@@ -27,31 +37,25 @@
         <footer>
             <!-- <button onclick="changeQuestion(this.id)" id="previous">previous Question</button> -->
             <button onclick="previous()" class="previous"><i class="fa fa-hand-o-left" aria-hidden="true"></i></button>
-            
-                        <button onclick="next()" class="next"><i class="fa fa-hand-o-right" aria-hidden="true"></i></button>
-
+            <button onclick="next()" class="next"><i class="fa fa-hand-o-right" aria-hidden="true"></i></button>
             <!-- <button onclick="changeQuestion(this.id)" id="next">Next Question</button> -->
         </footer>
         <a href="">
                 <a href="#openModal"><button class="submit"><i class="fa fa-hand-peace-o" aria-hidden="true"></i></button></a>
-            </a>
+        </a>
     </div>
     <div>
+        <div id="openModal" class="modalDialog">
 
-
-
-<div id="openModal" class="modalDialog">
-
-    <div>
-          
-       <h1 >Your Score is:<h1 class="result"></h1></h1>
-       <div class="image"></div>
-       <a href="index.html"><button class="back">Go Back to Main Page</button></a>
+            <div>
+                <h1>Your Score is:<h1 class="result"></h1></h1>
+                <div class="image"></div>
+                <a href="index.html">
+                    <button class="back">Go Back to Main Page</button>
+                </a>
+            </div>
+        </div>
     </div>
-    
-</div>
-</div>
-
 </body>
 
 </html>
